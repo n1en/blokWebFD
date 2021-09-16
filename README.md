@@ -22,7 +22,7 @@ Sanne 't Hooft (vervangen door jouw naam)
 hier je startniveau (kies uit zwart, rood óf blauw)
 
 #### Je focus:
-surface plane; dit omdat mijn codeer skills niet goed genoeg zijn om responsive te gaan (ik wou responsive eerst doen, maar na 10 minuten coderen was deze droom weg)
+hier je focus (kies uit responsive óf surface plane)
  
 </details>
 
@@ -78,27 +78,26 @@ hier de naam van de pagina
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-coderen zelf vind ik best lastig, het coderen ging ook wel oeilijk. Ik heb voor vandaag ook geen tijd gehad om door te werken met de resultaten van gister.
+hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| Leon           | Denise                   | Lisa                    | Whitney          | Nina
-| ---            | ---                      | ---                     | ---              |
-| Wat wanneer af | hoever je site moet zijn | mee eens met de anderen | heeft niks gezegd| Wat is nu precies de eindopdracht (scherm)
-| en dat ook nog | dit als er tijd is       | nog een punt            | dit wil ik zeker |
-| ...            | ...                      | ...                     | ...              |
+| student 1      | student 2          | student 3    | student 4        |
+| ---            | ---                | ---          | ---              |
+| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+| ...            | ...                | ...          | ...              |
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- weten nu hoe ver je moet zijn (ik moet even bijwerken dit weekend)
-- niet responsive, dan hoef je alleen op een klein scherm te werken
-- ik heb weer hoop in dit project
-- duidelijk hoe je kan toepassen
-- ik moet een planning maken
+- punt 1
+- punt 2
+- nog een punt
+- ...
 
 </details>
 

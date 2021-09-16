@@ -3,11 +3,15 @@
   box-sizing:border-box;  
 }
 
+
 body {
+  background-color: white;
   font-family: 'Mada', sans-serif;
+  /* position: relative; */
 }
 
-nav {
+
+/* nav {
   position: fixed;
   height: 100%;
   display: inline-block;
@@ -16,28 +20,54 @@ nav {
   left: 0px;
   top: 0px;
   text-align: center;
-  box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 40%);         /*ik heb hier zolang mee zitten zoeken todat het klopt*/
+  box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 40%);        
+} */
+
+body {
+  font-family: 'Mada', sans-serif;
 }
 
-ul {
+.paginaIndeling{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
   list-style-type: none;
+  padding: 0 1em 0.5em 1em;
 }
 
-li {
+nav ul li {
   text-decoration: none;
 }
 
-.logo{
-  display: block;
+main{
+  width: 90%;
   position: relative;
-  width: 175px;
-  height: 156px;
-  background-image: url('logoErin.jpg');
-  background-size: 100% 100%;
+  display: block;
+  margin: auto;
 }
 
-div {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+.logo{
+  width: 50vw;
+  margin-left: 17vw;
+}
+
+.foto {
+  width: 20em;
+  padding:4em;
+  margin: auto;
+}
+
+.sectionGeelblok {
+  background-color: antiquewhite;
+}
+
+button {
+  font-size: 3.5vw;
+  margin-top: 17px;
+  padding: 12px 19px 12px 21px;
+  width: 20em;
 }
