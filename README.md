@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Auteur:
-Sanne 't Hooft (vervangen door jouw naam)
+Nina Rijntjes
 
 #### Je startniveau:
-hier je startniveau (kies uit zwart, rood óf blauw)
+blauw
 
 #### Je focus:
-hier je focus (kies uit responsive óf surface plane)
+surface plane; dit omdat mijn codeer skills niet goed genoeg zijn om responsive te gaan (ik wou responsive eerst doen, maar na 10 minuten coderen was deze droom weg)
  
 </details>
 
@@ -39,12 +39,12 @@ hier je focus (kies uit responsive óf surface plane)
 link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+Erin Watt  
+<img src="images/hoofdpagina.jpg" width="375px" alt="homepagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+<img src="images/fancontent.jpg" width="375px" alt="fan content pagina">
  
 </details>
 
@@ -84,20 +84,21 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+ | Leon           | Denise                   | Lisa                    | Whitney          | Nina
+ | ---            | ---                      | ---                     | ---              |
+ | Wat wanneer af | hoever je site moet zijn | mee eens met de anderen | heeft niks gezegd| Wat is nu precies de eindopdracht (scherm)
+ | en dat ook nog | dit als er tijd is       | nog een punt            | dit wil ik zeker |
+ | ...            | ...                      | ...                     | ...              |
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+ - weten nu hoe ver je moet zijn (ik moet even bijwerken dit weekend)
+ - niet responsive, dan hoef je alleen op een klein scherm te werken
+ - ik heb weer hoop in dit project
+ - duidelijk hoe je kan toepassen
+ - ik moet een planning maken
 
 </details>
 
