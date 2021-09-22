@@ -1,73 +1,299 @@
-/* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
-}
-
-
 body {
-  background-color: white;
-  font-family: 'Mada', sans-serif;
-  /* position: relative; */
+    background-color: white;
+    font-family: 'Mada', sans-serif;
 }
 
 
-/* nav {
-  position: fixed;
-  height: 100%;
-  display: inline-block;
-  vertical-align: top;
-  width: 255px;
-  left: 0px;
-  top: 0px;
-  text-align: center;
-  box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 40%);        
-} */
 
-body {
-  font-family: 'Mada', sans-serif;
+
+
+
+/* HEADER */
+  
+header {
+    max-width: 480px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    border-radius: 10px;
 }
-
-.paginaIndeling{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  
+header img {
+    width: 40vw;
+    margin-left: 29vw;
 }
-
+  
+nav {
+    overflow: hidden;
+    position: relative;
+    color: #0A0A0A;
+}
+  
+nav #myLinks {
+    display: none;
+}
+  
+nav a {
+    color: #3D3D3D;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+}
+  
+nav a.icon {
+    background: rgb(255, 255, 255);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+  
 nav ul {
-  list-style-type: none;
-  padding: 0 1em 0.5em 1em;
+    list-style-type: none;
+    padding: 0 1em 0.5em 1em;
+    border-bottom: 1px solid #e2e2e2;
 }
+  
+nav li {
+    letter-spacing: 0.01em;
+    font-size: 16px;
+    padding-left: 4%;
+    padding-top: 15.2px;
+  }
 
-nav ul li {
-  text-decoration: none;
-}
 
-main{
-  width: 90%;
-  position: relative;
-  display: block;
-  margin: auto;
-}
 
-.logo{
-  width: 50vw;
-  margin-left: 17vw;
-}
 
-.foto {
-  width: 20em;
-  padding:4em;
-  margin: auto;
-}
 
-.sectionGeelblok {
-  background-color: antiquewhite;
+
+/* MAIN */
+
+main {
+    padding:0 1em 1em;
+    list-style:none;
+    padding-bottom: 50px;
+  }
+
+
+
+
+
+/* GELE BLOK */
+
+section:first-child{
+    padding-top: 50px;
+    padding-bottom: 40px;
+    background-color: rgb(253, 251, 239);
+  }
+  /* gele blok */
+
+section:first-child img {
+    width: 45vw;
+    margin-left: 23vw;
+    box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 20%);
+  }
+  /* afbeelding midden zetten met boarder */
+
+section:first-child p {
+    padding:0 1em 1em;
+    text-align: center;
 }
+/* zorgt ervoor dat de tekst centraal staat en niet tegen de rand */
+
+
+section p:nth-child(2) {
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+    text-align: center; 
+}
+  /* dit is voor de quote die onder de foto staat */
+
+section p:nth-child(3) {
+    font-size: 14.5px;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    text-align: center;
+}
+/* de quote wordt hier net iets dunner (weight lager) en letter spacing meer ect */
 
 button {
-  font-size: 3.5vw;
-  margin-top: 17px;
-  padding: 12px 19px 12px 21px;
-  width: 20em;
+    font-size: 3.4vw;
+    margin-top: 17px;
+    padding: 12px 19px 12px 21px;
+    background-color: rgb(253, 251, 239);
+    margin: auto;
+    display: block;
 }
+/* knop is nu zelfde achtergdrond kleur en staat centraal door disply block & margin */
+
+
+
+
+
+/* LIJN */
+
+.dubbelLijn {
+    display: block;
+    position: relative;
+    height: 5px;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+
+
+
+
+/* 2E SECTION MET BOEKEN */
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    text-align: center;
+    font-weight: lighter;
+}
+/* geeft eerste h1 / tekst dingen */
+
+section li img {
+    width: 114px;
+    box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 20%);
+    align-items: center;
+}
+/* grootte geven aan boekfoto's (width) en shadow geven */
+
+section li {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 35%;
+    margin-right: 6%;
+    margin-left: 2%;
+}
+/* zet foto's naast elkaar met tekst eronder en uit elkaar (margin) */
+
+section:nth-child(3) p {
+    font-weight: lighter;
+    color: rgb(48, 48, 48);
+    margin-left: -13%;
+    font-size: 13px;
+    padding-top: 4px;
+    letter-spacing: .3px;
+    line-height: 18px;
+}
+/* tekst wordt minder drukkend en komt dichter bij elkaar te staan */
+/* margin left zorgt ervoor dat de tekst meer naar links komt, ik heb geen idee hoe */
+
+/* ?? 2E SECTION MAAR WAAROM IS DIT DAN 3 */
+
+
+
+/* LIJN ENKEL */
+
+.enkelLijn {
+    border-top: 1px solid #e2e2e2;
+}
+
+
+
+
+
+/* 1 ZIN MET LINK */
+
+section:nth-child(5) p{
+    font-size: 13px;
+    line-height: 474%;
+    font-weight: lighter;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+/* tekst info dingen + line height voor afstand van de streep */
+/* ?? 3E SECTION MAAR NUMMER 5 */
+
+section:nth-child(5) a {
+    font-weight: 400;
+    color: #e5c948;
+    text-decoration: none;
+}
+/* link andere kleur + iets dikkere tekst dan de rest */
+
+
+
+
+
+/* SUBSCRIBE TEKST */
+  
+input {
+    height: 44px;
+    padding-bottom: 8px;
+    padding-top: 7px;
+    text-align: center;
+    border: 1px solid #e2e2e2;
+    font-size: 16px;
+    font-weight: lighter;
+}
+/* heigt regelt de hoogte van de box */
+
+button {
+    height: 44px;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    background-color: white;
+    border: 2px solid rgba(230, 203, 69, 0.83);
+    border-radius: 3px
+}
+/* radius zorgt voor een iets ronderen hoek */
+
+section:nth-child(7){
+    padding-bottom: 71px;
+    margin-top: 30px;
+    text-align: center;
+}
+/* beetje van lijntje af en ruimte onder */
+
+
+
+
+
+/* SOCIALS */
+
+section:nth-child(9) {
+    background-color: aqua;
+}
+
+section:nth-child(9) img {
+    box-shadow: none;
+    width: 46px;
+
+
+}
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    font-size: 13px;  
+    font-weight: 500;
+    padding-top: 24px;
+    color: #3d3d3d;
+    letter-spacing: .02em;
+}
+
+footer p:nth-child(2) {
+    font-size: 12px;
+}
+
+
+
+
+
+/* CURSOR */

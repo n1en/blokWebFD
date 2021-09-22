@@ -1,50 +1,132 @@
-<!doctype html>
-<html lang="nl">
-	
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Logo</title>
-	
-	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erin Watt</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
-	
-	<div class="paginaIndeling">
 
-	<header>
-		<p>MENU</p>
-		<nav>
-			<ul>
-				<li>Home</li>
-				<li>News</li>
-				<li>Books</li>
-				<li>Shop</li>
-				<li>Media</li>
-				<li>Fan Content</li>
-				<li>Contact</li>
-			</ul>
-		</nav>
-	</header>
+    <!-- vragen:
+    - Hoe krijg je de lijntjes van zowel menu...
+    -...als tussen de sections? (bij 1 zit tegen geel)
+    - Mijn section nummers doen raar
+    - hoe krijg ik meet ruimte tussen de strepen
+    - form kijken
 
-	<main> 
-			<img src="images/logoErin.jpg" alt="logo Erin" class="logo">
-	
-		<section class="sectionGeelblok">
-			<img src="images/Cracked-Kingdom.jpg" alt="boek Cracked Kingdom" class="foto">
-			<p>"This generation's Cruel Intentions."</p>
-			<p>— #1 NYT BESTSELLING AUTHOR JENNIFER ARMENTROUT</p>
-			<button>More About the Book</button>
-		</section>
-	</main> 
+     -->
 
-	</div>
+    <header>
 
-	<script src="scripts/script.js"></script>
+                <nav>
+                    <a href="#home" ></a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">MENU </a> 
+                    <!-- bron: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+                      
+                    <ul id="myLinks">
+                        <li>Home</li>
+                        <li>News</li>
+                        <li>Books</li>
+                        <li>Shop</li>
+                        <li>Media</li>
+                        <li>Fan Content</li>
+                        <li>Contact</li>
+                    </ul>    
+
+                </nav>
+                
+                <img src="images/Author-Erin-Watt-logo-1x.png" alt="logo Erin Watt">
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <img src="images/Cracked-Kingdom.jpeg" alt="boek Cracked Kingdom">
+            <p>"This generation's Cruel Intentions."</p>
+            <p>— #1 NYT BESTSELLING AUTHOR JENNIFER ARMENTROUT</p>            
+            <button>More About the Book </button>
+
+        </section>
+
+
+            <div class="dubbelLijn"></div>
+
+
+        <section>
+
+            <h1>THESE ROYALS WILL RUIN YOU</h1>
+
+            <ul>   
+                <li>
+                    <img src="images/Paper-Princess.jpeg" alt="Paper Princess">
+                    <p> <em>Paper Princess,</em> #1 <em>New York Times</em> bestseller. 16 weeks on the <em>New York Times</em> bestseller list.</p>
+                </li>
+
+                <li>
+                    <img src="images/Broken-Prince.jpeg" alt="Broken Prince">
+                    <p> <em>Broken Prince,</em> #1 <em>New York Times</em> bestseller, #4 <em>Wall Street Journal</em> bestseller, #24 <em>Today</em> bestseller.</p>
+                </li>
+
+                <li>
+                    <img src="images/Twisted-Palace.jpeg" alt="Twisted Palace">
+                    <p> <em>Twisted Palace</em> #1 <em>New York Times</em> bestseller, #24 <em>USA Today</em> bestseller.</p>
+                </li>
+
+                <li>
+                    <img src="images/Fallen-Heir.jpeg" alt="Fallen Heir">
+                    <p> <em>Fallen Heir</em></p>
+                </li>
+            </ul>
+
+        </section>
+            
+
+            <div class="enkelLijn"></div>
+
+
+        <section>
+                <p>Literary Agent: Don Fehr, <a href="http://www.tridentmediagroup.com/" >Trident</a> </p>
+        </section>
+
+            <div class="dubbelLijn"></div>
+
+        <section>
+            
+            <h1>SUBSCRIBE TO THE NEWSLETTER</h1>
+
+            <input type="text" placeholder="email address"/>
+            <button>SUBSCRIBE</button>
+        
+        </section>
+
+        <div class="enkelLijn"></div>
+
+        <section>
+            <h1>KEEP IN TOUCH!</h1>
+            <li>
+                <ul><img src="images/icon-facebook.svg" alt="Facebook icoon"></ul>
+                <ul><img src="images/icon-twitter.svg" alt="Facebook icoon"></ul>
+                <ul><img src="images/icon-goodreads.svg" alt="Facebook icoon"></ul>
+                <ul><img src="images/icon-instagram.svg" alt="Facebook icoon"></ul>
+                <ul><img src="images/icon-amazon.svg" alt="Facebook icoon"></ul>
+            </li>
+        </section>
+
+        <div class="dubbelLijn"></div>
+
+    </main>
+
+    <footer>
+        <p>Copyright © 2021 Erin Watt  |  Privacy Policy</p>
+        <p>Designed and Built with <img src="images/creditheart.svg" alt="">  by Priceless Design Studio</p>
+    </footer>
+
+
+    <script src="scripts/script.js"></script>
+
 </body>
-	
 </html>
