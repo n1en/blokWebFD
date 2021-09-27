@@ -36,15 +36,15 @@ surface plane; dit omdat mijn codeer skills niet goed genoeg zijn om responsive 
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
-
+https://authorerinwatt.com 
+ 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Erin Watt  
 <img src="images/hoofdpagina.jpg" width="375px" alt="homepagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
-<img src="images/fancontent.jpg" width="375px" alt="fan content pagina">
+<img src="images/shopPagina.jpg" width="375px" alt="fan content pagina">
  
 </details>
 
@@ -78,8 +78,7 @@ hier de naam van de pagina
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+ik merk dat ik het erg moeilijk vind en veel tijd heb besteed aan dit project, terwijl dat vgm helemaal niet te zien is.
 
 ### Agenda voor meeting
 samen met je groepje opstellen
@@ -112,8 +111,8 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+ik was niet bij het gesprek, dit komt omdat ik een begravenis had, vandaar dat dit ook niet ingevuld is. 
+ stand van zaken, ik heb te lang aan een menu besteed, zonde van mijn tijd want het was niet goed. Ik heb later die week Bo om hulp gevraagd en toen ging het beter. Ook ben ik verder gaan werken aan het mooi maken van de pagina en een begin gemaakt aan pagina 2.
 
 ### Agenda voor meeting
 samen met je groepje opstellen
@@ -126,12 +125,8 @@ samen met je groepje opstellen
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
+nvt
+ 
 
 </details>
 
