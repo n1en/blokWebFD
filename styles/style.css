@@ -1,9 +1,22 @@
-body {
-    background-color: white;
-    font-family: 'Mada', sans-serif;
+:root {
+    --ruimteHoog: 40px;
+    --ruimteLaag: 20px;
+    --achtergrondWit: white;
+    --lijn: #e2e2e2;
+    --hoverKleur: #5BD1D7;
+    --lettertypeZwart: black;
+    --lichterZwart: #303030;
+    --grijzePtext: rgb(82, 82, 82);
+    --fotoEnText: 114px;
 }
 
-
+body {
+    margin:0;
+    padding:5vw;
+    background-color:var(--achtergrondWit);
+    font-family: 'Mada', sans-serif;
+    color:var(--lettertypeZwart);
+}
 
 
 
@@ -13,8 +26,7 @@ body {
 header {
     max-width: 480px;
     margin: auto;
-    background-color: rgb(255, 255, 255);
-    height: 500px;
+    background-color: var(--achtergrondWit);
     border-radius: 10px;
 }
   
@@ -23,44 +35,68 @@ header img {
     margin-left: 29vw;
 }
   
-nav {
-    overflow: hidden;
-    position: relative;
-    color: #0A0A0A;
+
+
+
+
+
+/* MENU */
+/* bron: https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0 */
+* {
+    margin: 0;
+    box-sizing: border-box;
 }
+/* hierdooor is het puntje ook te zien van het */
   
-nav #myLinks {
+header button {
+    position: fixed;
+    /* keep the hamburger button above everything */
+    z-index: 100;
+    top: 16px;
+    right: 16px;
+    width: 38px;
+    height: 38px;
+    background:transparent;
+
+}
+/* door z blijft het menu bovenaan staan. de rest is voor het stylen van het menu */
+  
+.xIcoon {
     display: none;
 }
+/* hierdoor zou x niet te zien moeten zijn */
   
-nav a {
-    color: #3D3D3D;
+header ul{
+    padding-top: 40px;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--achtergrondWit);
+    transform: translateY(-100%);
+    transition: transform 0.7s;
+}
+/* het menu is hidden, door tranform komt die naar beneden. door de transition tijd duurt het 0.2s */
+
+.showMenu {
+    transform: translateY(0);
+}
+/* hierdoor gaat het menu later in js weer naar 0% dus omhoog */
+  
+header li {
     padding: 14px 16px;
-    text-decoration: none;
-    font-size: 14px;
-    display: block;
-}
-  
-nav a.icon {
-    background: rgb(255, 255, 255);
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-  
-nav ul {
     list-style-type: none;
-    padding: 0 1em 0.5em 1em;
-    border-bottom: 1px solid #e2e2e2;
-}
-  
-nav li {
-    letter-spacing: 0.01em;
+    color: var(--lettertypeZwart);
+    text-decoration: none;
     font-size: 16px;
-    padding-left: 4%;
-    padding-top: 15.2px;
-  }
+    border-bottom: 1px solid var(--lijn);
+}
+/* padding 1e is hoogte, 2e links */
+
+header a {
+    color: var(--lettertypeZwart);
+}
+
+
 
 
 
@@ -73,7 +109,30 @@ main {
     padding:0 1em 1em;
     list-style:none;
     padding-bottom: 50px;
-  }
+    text-align: center;
+}
+
+
+
+
+
+
+/* SECTION */
+section {
+    margin-top: var(--ruimteHoog);
+    margin-bottom: var(--ruimteLaag);
+}
+
+
+
+
+
+/* LINKS */
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
 
 
 
@@ -84,50 +143,60 @@ main {
 section:first-child{
     padding-top: 50px;
     padding-bottom: 40px;
-    background-color: rgb(253, 251, 239);
-  }
-  /* gele blok */
+    background-color: #FDFBEF;
+    margin-bottom: 20px;
+}
+/* gele blok */
 
 section:first-child img {
     width: 45vw;
-    margin-left: 23vw;
+    margin-left: 25%;
+    margin-right: 25%;
     box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 20%);
-  }
-  /* afbeelding midden zetten met boarder */
+}
+/* afbeelding midden zetten met boarder */
 
-section:first-child p {
-    padding:0 1em 1em;
+section p {
+    padding:0 3em 3em;
     text-align: center;
 }
 /* zorgt ervoor dat de tekst centraal staat en niet tegen de rand */
 
 
-section p:nth-child(2) {
-    font-size: 17px;
+section:nth-child(1) p:nth-of-type(1) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
     font-weight: 400;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.5px;
     line-height: 24px;
     text-align: center; 
 }
-  /* dit is voor de quote die onder de foto staat */
+/* dit is voor de quote die onder de foto staat */
 
-section p:nth-child(3) {
-    font-size: 14.5px;
-    font-weight: 300;
+section:nth-child(1) p:nth-of-type(2) {
+    font-size: 13px;
+    font-weight: 320;
     letter-spacing: 0.6px;
     text-align: center;
 }
 /* de quote wordt hier net iets dunner (weight lager) en letter spacing meer ect */
 
-button {
-    font-size: 3.4vw;
+button:nth-of-type(1) {
     margin-top: 17px;
     padding: 12px 19px 12px 21px;
-    background-color: rgb(253, 251, 239);
     margin: auto;
     display: block;
+    background-color: transparent;
+    border: 2px solid #000;
+}
+
+button:hover {
+    border: 2px var(--hoverKleur);
+    color: var(--hoverKleur);
 }
 /* knop is nu zelfde achtergdrond kleur en staat centraal door disply block & margin */
+
 
 
 
@@ -139,9 +208,10 @@ button {
     display: block;
     position: relative;
     height: 5px;
-    border-top: 1px solid #e2e2e2;
-    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid var(--lijn);
+    border-bottom: 1px solid var(--lijn);
 }
+
 
 
 
@@ -156,14 +226,17 @@ h1 {
     letter-spacing: 0.6px;
     text-align: center;
     font-weight: lighter;
+    margin-bottom: 20px;
 }
 /* geeft eerste h1 / tekst dingen */
 
 section li img {
-    width: 114px;
+    width: var(--fotoEnText);
     box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 20%);
     align-items: center;
+    margin-bottom: 12px;
 }
+
 /* grootte geven aan boekfoto's (width) en shadow geven */
 
 section li {
@@ -171,31 +244,33 @@ section li {
     position: relative;
     vertical-align: top;
     width: 35%;
-    margin-right: 6%;
+    margin-right: 10%;
     margin-left: 2%;
 }
 /* zet foto's naast elkaar met tekst eronder en uit elkaar (margin) */
 
-section:nth-child(3) p {
+section:nth-of-type(2) p {
     font-weight: lighter;
-    color: rgb(48, 48, 48);
-    margin-left: -13%;
-    font-size: 13px;
+    color: var(--lichterZwart);
+    font-size: 12px;
     padding-top: 4px;
     letter-spacing: .3px;
     line-height: 18px;
+    padding-left: 0%;
+    padding-right: 0%;
+    width: var(--fotoEnText);
 }
-/* tekst wordt minder drukkend en komt dichter bij elkaar te staan */
-/* margin left zorgt ervoor dat de tekst meer naar links komt, ik heb geen idee hoe */
 
-/* ?? 2E SECTION MAAR WAAROM IS DIT DAN 3 */
+/* tekst wordt minder drukkend en komt dichter bij elkaar te staan */
+/* padding zorgt dat text 100% tegen de randen van het text blok staan hoe */
+
 
 
 
 /* LIJN ENKEL */
 
 .enkelLijn {
-    border-top: 1px solid #e2e2e2;
+    border-top: 1px solid var(--lijn);
 }
 
 
@@ -204,22 +279,28 @@ section:nth-child(3) p {
 
 /* 1 ZIN MET LINK */
 
-section:nth-child(5) p{
+section:nth-of-type(3) p{
     font-size: 13px;
-    line-height: 474%;
     font-weight: lighter;
     letter-spacing: 0.02em;
     text-align: center;
 }
 /* tekst info dingen + line height voor afstand van de streep */
-/* ?? 3E SECTION MAAR NUMMER 5 */
+/* het is 5e child  */
 
-section:nth-child(5) a {
+section:nth-of-type(3) a {
     font-weight: 400;
     color: #e5c948;
     text-decoration: none;
 }
+
+section:nth-of-type(3) a:hover {
+    color: var(--hoverKleur);
+    cursor: pointer;
+}
+
 /* link andere kleur + iets dikkere tekst dan de rest */
+
 
 
 
@@ -232,26 +313,25 @@ input {
     padding-bottom: 8px;
     padding-top: 7px;
     text-align: center;
-    border: 1px solid #e2e2e2;
+    border: 1px solid var(--lijn);
     font-size: 16px;
     font-weight: lighter;
 }
 /* heigt regelt de hoogte van de box */
 
-button {
+section:nth-of-type(4) button {
     height: 44px;
     font-size: 15px;
     font-weight: 800;
     letter-spacing: 0.05em;
-    background-color: white;
+    background-color: transparent;
     border: 2px solid rgba(230, 203, 69, 0.83);
     border-radius: 3px
 }
 /* radius zorgt voor een iets ronderen hoek */
 
-section:nth-child(7){
+section:nth-of-type(4){
     padding-bottom: 71px;
-    margin-top: 30px;
     text-align: center;
 }
 /* beetje van lijntje af en ruimte onder */
@@ -260,18 +340,23 @@ section:nth-child(7){
 
 
 
+
 /* SOCIALS */
 
-section:nth-child(9) {
-    background-color: aqua;
-}
-
-section:nth-child(9) img {
+section:nth-of-type(5) img {
     box-shadow: none;
     width: 46px;
-
-
 }
+
+section:nth-of-type(5) li {
+    display: flex;
+}
+
+section:nth-of-type(5) ul {
+    margin-inline-start: -12px;
+    margin-inline-end: -15px;
+}
+
 
 
 
@@ -283,17 +368,34 @@ footer {
     text-align: center;
     font-size: 13px;  
     font-weight: 500;
-    padding-top: 24px;
-    color: #3d3d3d;
+    color: var(--lichterZwart);
     letter-spacing: .02em;
 }
 
-footer p:nth-child(2) {
+footer p:nth-of-type(1) {
+    font-weight: 500;
+}
+
+footer p:nth-of-type(2) {
+    font-weight: 300;
     font-size: 12px;
 }
 
+footer img {
+    width: 17px;
+    position: relative;
+    top: 4px;;
+}
+/* onderste 2 zorgen ervoor dat het hartje meer naar beneden staat */
 
 
 
 
-/* CURSOR */
+
+
+/* STATES */
+
+a:hover {
+    color: var(--hoverKleur);
+    text-decoration: var(--hoverKleur);
+}

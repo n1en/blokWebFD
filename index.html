@@ -9,35 +9,37 @@
 </head>
 <body>
 
-    <!-- vragen:
-    - Hoe krijg je de lijntjes van zowel menu...
-    -...als tussen de sections? (bij 1 zit tegen geel)
-    - Mijn section nummers doen raar
-    - hoe krijg ik meet ruimte tussen de strepen
-    - form kijken
+    <!-- HELP
+    - center keep in touch
+    - Button hover lijn weg?
+    - BUTTON inschrijven helppppppp
+    - waarom foto 25%
+    - ik wil padding meer naar links maar lukt niet (bij royals will ruin you)
+    -  -->
 
-     -->
 
     <header>
 
-                <nav>
-                    <a href="#home" ></a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">MENU </a> 
-                    <!-- bron: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
-                      
-                    <ul id="myLinks">
-                        <li>Home</li>
-                        <li>News</li>
-                        <li>Books</li>
-                        <li>Shop</li>
-                        <li>Media</li>
-                        <li>Fan Content</li>
-                        <li>Contact</li>
-                    </ul>    
+        <nav>
+            <button>
+                <!-- span nodig! door material-icons komt -> (bron) streep: https://material.io/resources/icons/ -->
+                <span class="menuIcon material-icons">menu</span>
+                <span class="xIcoon material-icons">close</span>
+            </button>
+                <!-- The menuIcon and xIcon are NOT needed. I've added them to reference the icons in js later on. -->
 
-                </nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">News</a></li>
+                <li><a href="index.html">Books</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="index.html">Media</a></li>
+                <li><a href="index.html">Fan Content</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>   
+        </nav>
                 
-                <img src="images/Author-Erin-Watt-logo-1x.png" alt="logo Erin Watt">
+        <img src="images/Author-Erin-Watt-logo-1x.png" alt="logo Erin Watt">
 
     </header>
 
@@ -94,6 +96,8 @@
 
             <div class="dubbelLijn"></div>
 
+
+            
         <section>
             
             <h1>SUBSCRIBE TO THE NEWSLETTER</h1>
@@ -119,6 +123,7 @@
         <div class="dubbelLijn"></div>
 
     </main>
+
 
     <footer>
         <p>Copyright © 2021 Erin Watt  |  Privacy Policy</p>
