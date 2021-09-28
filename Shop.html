@@ -5,19 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
-    <link rel="stylesheet" href="styles/style2.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
+<body >
 
 
+
+    <header>
+
+        <nav>
+            <button>
+                <!-- span nodig! door material-icons komt -> (bron) streep: https://material.io/resources/icons/ -->
+                <span class="menuIcon material-icons">menu</span>
+                <span class="xIcoon material-icons">close</span>
+            </button>
+                <!-- The menuIcon and xIcon are NOT needed. I've added them to reference the icons in js later on. -->
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">News</a></li>
+                <li><a href="index.html">Books</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="index.html">Media</a></li>
+                <li><a href="index.html">Fan Content</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>   
+        </nav>
+       
+        <img src="images/Author-Erin-Watt-logo-1x.png" alt="logo Erin Watt">
+
+        <div class="enkelLijn"></div>
+
+    </header>
    
 
    
+    <main class="shop">
+
         <section>
             <h1>BOOKS & JOURNALS</h1>
-            <nav>
-            <a class="shopping-cart" href="#" title="shopping cart"><img src="images/car.jpeg" alt="car"><span>0</span></a>
-            </nav>
+            <a class="shopping-cart" href="Shop.html" title="shopping cart"><img src="images/car.jpeg" alt="car"><span>0</span></a>
         </section>
 
         <div class="dubbelLijn"></div>
@@ -48,10 +75,37 @@
             
         </section>
 
+        <div class="dubbelLijn"></div>
+    
+
+        <section>
+            <h1>KEEP IN TOUCH!</h1>
+            <li>
+                <ul><img src="images/icon-facebook.svg" alt="Facebook icoon"></ul>
+                <ul><img src="images/icon-twitter.svg" alt="Facebook icoon"></ul>
+                <ul><img src="images/icon-goodreads.svg" alt="Facebook icoon"></ul>
+                <ul><img src="images/icon-instagram.svg" alt="Facebook icoon"></ul>
+                <ul><img src="images/icon-amazon.svg" alt="Facebook icoon"></ul>
+            </li>
+        </section>
+    
+            <div class="dubbelLijn"></div>
+    
+        </main>
+    
+
+
+    <footer>
+        <p>Copyright © 2021 Erin Watt  |  Privacy Policy</p>
+        <p>Designed and Built with <img src="images/creditheart.svg" alt="">  by Priceless Design Studio</p>
+    </footer>
 
     
 
 
-    <script src="scripts/script2.js"></script>
+    
+
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>

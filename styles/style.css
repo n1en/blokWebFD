@@ -19,6 +19,7 @@ body {
 }
 
 
+/* body.p2 sect */
 
 
 /* HEADER */
@@ -54,10 +55,8 @@ header button {
     z-index: 100;
     top: 16px;
     right: 16px;
-    width: 38px;
     height: 38px;
     background:transparent;
-
 }
 /* door z blijft het menu bovenaan staan. de rest is voor het stylen van het menu */
   
@@ -145,6 +144,7 @@ section:first-child{
     padding-bottom: 40px;
     background-color: #FDFBEF;
     margin-bottom: 20px;
+    z-index: 80;
 }
 /* gele blok */
 
@@ -184,15 +184,14 @@ section:nth-child(1) p:nth-of-type(2) {
 
 button:nth-of-type(1) {
     margin-top: 17px;
-    padding: 12px 19px 12px 21px;
     margin: auto;
     display: block;
-    background-color: transparent;
+    background-color: var(--achtergrondWit);
     border: 2px solid #000;
 }
 
 button:hover {
-    border: 2px var(--hoverKleur);
+    border: 2px solid var(--hoverKleur);
     color: var(--hoverKleur);
 }
 /* knop is nu zelfde achtergdrond kleur en staat centraal door disply block & margin */
@@ -260,9 +259,10 @@ section:nth-of-type(2) p {
     padding-right: 0%;
     width: var(--fotoEnText);
 }
-
 /* tekst wordt minder drukkend en komt dichter bij elkaar te staan */
 /* padding zorgt dat text 100% tegen de randen van het text blok staan hoe */
+
+
 
 
 
@@ -272,6 +272,9 @@ section:nth-of-type(2) p {
 .enkelLijn {
     border-top: 1px solid var(--lijn);
 }
+
+/* button:nth-of-type(1 */
+
 
 
 
@@ -316,6 +319,7 @@ input {
     border: 1px solid var(--lijn);
     font-size: 16px;
     font-weight: lighter;
+    margin-bottom: 10px;
 }
 /* heigt regelt de hoogte van de box */
 
@@ -327,11 +331,12 @@ section:nth-of-type(4) button {
     background-color: transparent;
     border: 2px solid rgba(230, 203, 69, 0.83);
     border-radius: 3px
+
 }
 /* radius zorgt voor een iets ronderen hoek */
 
 section:nth-of-type(4){
-    padding-bottom: 71px;
+    padding-bottom: 30px;
     text-align: center;
 }
 /* beetje van lijntje af en ruimte onder */
@@ -393,9 +398,147 @@ footer img {
 
 
 
+
+
+
+
+
+
+
+
+
+
+/* PAGINA 2 */
+
+
+main.shop h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+/* books & journal */
+
+main.shop section:nth-of-type(1) {
+    background: var(--achtergrondWit);
+}
+
+main.shop section:nth-of-type(1) a{
+    font-size: 13px;
+    float: left;
+    margin-top: 21px;
+}
+/* winkelmandje met getal  */
+/* floar right zorgt ervoor dat het niet tegen streep aan staat */
+
+
+
+
+
+
+main.shop img {
+    width: 45vw;
+    margin-left: 25%;
+    margin-right: 25%;
+    box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 20%);
+}
+
+main.shop h3 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-top: 13px;
+}
+
+
+main.shop .shopping-cart {
+    color: black;
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
+main.shop article {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main.shop p {
+    font-size: 13px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+
+main.shop {
+    position:relative;
+    background-color:var(--patta-background-color);
+}
+
+ 
+main.shop section:nth-of-type(1) img {
+    box-shadow: none;
+    width: 22px;
+}
+  
+
+main.shop article {
+    padding-top: 50px;
+}
+/* article padding, ruimte tussen articles */
+
+  
+main.shop article button {
+    border: 2px solid rgba(230, 203, 69, 0.83);
+    cursor:pointer;
+    background-color: transparent;
+    font-size:13px;
+    font-weight:bold;
+    letter-spacing: 0.28px;
+    padding:.5em 1em;
+}
+/* maak zelfde als subscribe ding */
+
+
+
+
+
+/* SOCIAL PAGINA 2 */
+/* moest deze aanpassen omdat het door de sections niet meer klopt :) */
+
+main.shop section:nth-of-type(3) img {
+    box-shadow: none;
+    width: 46px;
+}
+
+main.shop section:nth-of-type(3) li {
+    display: flex;
+}
+
+main.shop section:nth-of-type(3) ul {
+    margin-inline-start: -12px;
+    margin-inline-end: -15px;
+}
+
+
+
+  
+
+
+
+
+
+
 /* STATES */
 
 a:hover {
     color: var(--hoverKleur);
     text-decoration: var(--hoverKleur);
 }
+
+
+
