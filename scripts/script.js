@@ -3,7 +3,7 @@ var knop = document.querySelector(".knopMenu")
 var xIcoon = document.querySelector(".xIcoon")
 var menuIcon = document.querySelector(".menuIcon")
 
-var menuLijst = document.querySelectorAll("li")
+var menuLijst = document.querySelectorAll("nav")
 
 var addToCartButtons = document.querySelectorAll("button.shop");
 
