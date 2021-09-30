@@ -29,11 +29,12 @@ header {
     margin: auto;
     background-color: var(--achtergrondWit);
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
 }
   
 header img {
     width: 40vw;
-    margin-left: 29vw;
 }
   
 
@@ -53,13 +54,14 @@ header button {
     position: fixed;
     /* keep the hamburger button above everything */
     z-index: 100;
-    top: 16px;
-    right: 16px;
-    height: 38px;
+    top: 20px;
+    right: 20px;
+    height: 42px;
     background:transparent;
 }
 /* door z blijft het menu bovenaan staan. de rest is voor het stylen van het menu */
-  
+/* na de usabilty test heb ik deze knop iets groter gemaakt en een zwarte rand gegeven, zo is die net iets beter te zien, maar nog steeds niet stort   */
+
 .xIcoon {
     display: none;
 }
@@ -161,6 +163,7 @@ section:first-child{
     z-index: 80;
 }
 /* gele blok */
+/* gele blok is niet voor iedereen goed te zien door de lichte kleur, echter is het blok decoratief en niet echt heel belangrijk, dus ga ik deze niet aanpassen */
 
 section:first-child img {
     width: 45vw;
@@ -200,7 +203,7 @@ button:nth-of-type(1) {
     margin-top: 17px;
     margin: auto;
     display: block;
-    background-color: var(--achtergrondWit);
+    background-color: transparent;
     border: 2px solid #000;
 }
 
@@ -252,17 +255,6 @@ section li img {
 
 /* grootte geven aan boekfoto's (width) en shadow geven */
 
-section li {
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-    width: 35%;
-    margin-right: 10%;
-    margin-left: 2%;
-    z-index: 1;
-}
-/* zet foto's naast elkaar met tekst eronder en uit elkaar (margin) */
-
 section:nth-of-type(2) p {
     font-weight: lighter;
     color: var(--lichterZwart);
@@ -272,11 +264,20 @@ section:nth-of-type(2) p {
     line-height: 18px;
     padding-left: 0%;
     padding-right: 0%;
-    margin-left: 30%;
     width: var(--fotoEnText);
 }
 /* tekst wordt minder drukkend en komt dichter bij elkaar te staan */
 /* padding zorgt dat text 100% tegen de randen van het text blok staan hoe */
+
+
+section:nth-of-type(2) li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+
 
 
 
@@ -371,12 +372,12 @@ section:nth-of-type(5) img {
 
 section:nth-of-type(5) li {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
 }
 
-section:nth-of-type(5) ul {
-    margin-inline-start: -12px;
-    margin-inline-end: -15px;
-}
+
 
 
 
@@ -474,6 +475,8 @@ main.shop .shopping-cart {
     color: black;
     background-color: yellowgreen;
     cursor: pointer;
+    display: block;
+    position: sticky;
 }
 
 main.shop article {
@@ -531,14 +534,20 @@ main.shop section:nth-of-type(3) img {
     width: 46px;
 }
 
-main.shop section:nth-of-type(3) li {
-    display: flex;
+
+main.shop section:nth-of-type(3) img {
+    box-shadow: none;
+    width: 46px;
 }
 
-main.shop section:nth-of-type(3) ul {
-    margin-inline-start: -12px;
-    margin-inline-end: -15px;
+main.shop section:nth-of-type(3) li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
 }
+
+/* laatste 2 zelfde als vorige pagina, maar moest aanpassen omdat sections anders zijn */
 
 
 
@@ -557,4 +566,28 @@ a:hover {
 }
 
 
+
+
+
+/* ANIMATIES ECT */
+
+
+.zoomIn:hover {
+    background: green;
+    animation: zoomIn 2s ease-out;
+}
+  
+@keyframes zoomIn {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+}
+
+/* hulp: https://codepen.io/vaishali1192/pen/QWdJZVy */
 
