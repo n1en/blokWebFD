@@ -220,10 +220,10 @@ waar ik niet uit kwam:
 
 ### Screenshot(s)
 
-<img src="images/hoofdpagina1.jpg" width="375px" alt="homepagina">
- <img src="images/hoofdpagina2.jpg" width="375px" alt="homepagina">
- <img src="images/shop1.jpg" width="375px" alt="homepagina">
- <img src="images/shop2.jpg" width="375px" alt="homepagina">
+<img src="images/hoofdpagina1.png" width="375px" alt="homepagina">
+ <img src="images/hoofdpagina2.png" width="375px" alt="homepagina">
+ <img src="images/shop1.png" width="375px" alt="homepagina">
+ <img src="images/shop2.png" width="375px" alt="homepagina">
 
 </details>
 
