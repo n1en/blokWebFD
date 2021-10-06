@@ -4,6 +4,7 @@
     --achtergrondWit: white;
     --lijn: #e2e2e2;
     --hoverKleur: #5BD1D7;
+    --focusKleur: #d75bd3;
     --lettertypeZwart: black;
     --lichterZwart: #303030;
     --grijzePtext: rgb(82, 82, 82);
@@ -19,24 +20,26 @@ body {
 }
 
 
-/* body.p2 sect */
+
+
+
+
+
 
 
 /* HEADER */
   
 header {
-    max-width: 480px;
-    margin: auto;
     background-color: var(--achtergrondWit);
-    border-radius: 10px;
     display: flex;
     justify-content: center;
 }
+/* met flex zetten we alle content in het midden, */
   
 header img {
     width: 40vw;
 }
-  
+
 
 
 
@@ -48,35 +51,42 @@ header img {
     margin: 0;
     box-sizing: border-box;
 }
-/* hierdooor is het puntje ook te zien van het */
+/* alle elementen */
   
+
 header button {
     position: fixed;
-    /* keep the hamburger button above everything */
+    /* houdt burger rechts */
     z-index: 100;
     top: 20px;
-    right: 20px;
+    right: 40px;
     height: 42px;
-    background:transparent;
+    background: transparent;
 }
 /* door z blijft het menu bovenaan staan. de rest is voor het stylen van het menu */
 /* na de usabilty test heb ik deze knop iets groter gemaakt en een zwarte rand gegeven, zo is die net iets beter te zien, maar nog steeds niet stort   */
 
+
 .xIcoon {
     display: none;
 }
-/* hierdoor zou x niet te zien moeten zijn */
+/* hierdoor zou close (XIcoon) niet te zien moeten zijn */
   
+
 header ul{
     padding-top: 40px;
     position: fixed;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    left: 0px;
     background: var(--achtergrondWit);
     transform: translateY(-100%);
     transition: transform 0.7s;
 }
 /* het menu is hidden, door tranform komt die naar beneden. door de transition tijd duurt het 0.2s */
+/* padding = text naar beneden || door position is wat alles redt (anders)
+width is het over hele pagina, niet rand || height is naar */
+
 
 .showMenu {
     transform: translateY(0);
@@ -90,8 +100,9 @@ header nav {
     background-color: var(--achtergrondWit);
     position: absolute;
     top: 0px;
-    width: 100vw;
+    width: 10vw;
 }
+/* absolute = boven || zonder top zie je het randje van de box */
 
 header nav ul li {
     padding: 14px 16px;
@@ -108,8 +119,6 @@ header nav ul li {
 header a {
     color: var(--lettertypeZwart);
 }
-
-
 
 
 
@@ -142,6 +151,7 @@ section {
 
 
 
+
 /* LINKS */
 a {
     cursor: pointer;
@@ -155,23 +165,24 @@ a {
 
 /* GELE BLOK */
 
-section:first-child{
+section:nth-child(1){
     padding-top: 50px;
     padding-bottom: 40px;
     background-color: #FDFBEF;
     margin-bottom: 20px;
     z-index: 80;
 }
-/* gele blok */
 /* gele blok is niet voor iedereen goed te zien door de lichte kleur, echter is het blok decoratief en niet echt heel belangrijk, dus ga ik deze niet aanpassen */
 
-section:first-child img {
+
+section:nth-child(1) img {
     width: 45vw;
     margin-left: 25%;
     margin-right: 25%;
     box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 20%);
 }
 /* afbeelding midden zetten met boarder */
+
 
 section p {
     padding:0 3em 3em;
@@ -232,8 +243,8 @@ button:hover {
 
 
 
-
 /* 2E SECTION MET BOEKEN */
+
 
 h1 {
     font-family: 'Times New Roman', Times, serif;
@@ -246,14 +257,44 @@ h1 {
 }
 /* geeft eerste h1 / tekst dingen */
 
+
+section:nth-of-type(2) ul{
+    width: 82vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    grid-row-gap: 2em;
+    padding: 0;
+}
+/* width = uimte tussen li || wrap = naast /onder elkaar*/
+    
+    
+section:nth-of-type(2) ul li {
+    list-style-type: none;
+}
+/* zet foto's naast elkaar met tekst eronder en uit elkaar (margin) */
+    
+section:nth-of-type(2) ul li p {
+    width: 8em;
+    padding: 0;
+    margin-left: 20%;
+}
+
+section:nth-of-type(2) ul li img {
+    width: 8em;
+}​
+
+
 section li img {
     width: var(--fotoEnText);
     box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 20%);
     align-items: center;
     margin-bottom: 12px;
 }
-
 /* grootte geven aan boekfoto's (width) en shadow geven */
+
 
 section:nth-of-type(2) p {
     font-weight: lighter;
@@ -265,17 +306,9 @@ section:nth-of-type(2) p {
     padding-left: 0%;
     padding-right: 0%;
     width: var(--fotoEnText);
-}
+} 
 /* tekst wordt minder drukkend en komt dichter bij elkaar te staan */
 /* padding zorgt dat text 100% tegen de randen van het text blok staan hoe */
-
-
-section:nth-of-type(2) li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-}
 
 
 
@@ -290,7 +323,7 @@ section:nth-of-type(2) li {
     border-top: 1px solid var(--lijn);
 }
 
-/* button:nth-of-type(1 */
+
 
 
 
@@ -308,18 +341,21 @@ section:nth-of-type(3) p{
 /* tekst info dingen + line height voor afstand van de streep */
 /* het is 5e child  */
 
+
 section:nth-of-type(3) a {
     font-weight: 400;
     color: #e5c948;
     text-decoration: none;
 }
 
+
 section:nth-of-type(3) a:hover {
     color: var(--hoverKleur);
     cursor: pointer;
 }
-
 /* link andere kleur + iets dikkere tekst dan de rest */
+
+
 
 
 
@@ -348,7 +384,6 @@ section:nth-of-type(4) button {
     background-color: transparent;
     border: 2px solid rgba(230, 203, 69, 0.83);
     border-radius: 3px
-
 }
 /* radius zorgt voor een iets ronderen hoek */
 
@@ -363,19 +398,29 @@ section:nth-of-type(4){
 
 
 
+
+
 /* SOCIALS */
 
 section:nth-of-type(5) img {
     box-shadow: none;
-    width: 46px;
+    width: 40px;
 }
 
 section:nth-of-type(5) li {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin: 20px;
+    justify-content: space-evenly;
 }
+/* ze uit elkaar using flex */
+
+section:nth-of-type(5) li ul {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0px;
+}
+/* vorige ul was voor algemeen gedaan, dus deze is voor de social ul en doet de rest ontdoen.  */
 
 
 
@@ -439,6 +484,8 @@ main.shop h1 {
 }
 /* books & journal */
 
+
+
 main.shop section:nth-of-type(1) {
     background: var(--achtergrondWit);
 }
@@ -463,6 +510,14 @@ main.shop img {
     box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 20%);
 }
 
+
+main.shop a {
+    position: fixed;
+    left: 40px;
+    padding-top: 265px;
+}
+
+
 main.shop h3 {
     font-size: 18px;
     font-weight: 300;
@@ -473,17 +528,17 @@ main.shop h3 {
 
 main.shop .shopping-cart {
     color: black;
-    background-color: yellowgreen;
     cursor: pointer;
-    display: block;
-    position: sticky;
+    top: 0;
 }
+
 
 main.shop article {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
 
 main.shop p {
     font-size: 13px;
@@ -526,28 +581,34 @@ main.shop article button {
 
 
 
+
+
 /* SOCIAL PAGINA 2 */
 /* moest deze aanpassen omdat het door de sections niet meer klopt :) */
 
 main.shop section:nth-of-type(3) img {
     box-shadow: none;
-    width: 46px;
-}
-
-
-main.shop section:nth-of-type(3) img {
-    box-shadow: none;
-    width: 46px;
+    width: 40px;
 }
 
 main.shop section:nth-of-type(3) li {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin: 20px;
+    justify-content: space-evenly;
 }
+/* ze uit elkaar using flex */
 
-/* laatste 2 zelfde als vorige pagina, maar moest aanpassen omdat sections anders zijn */
+main.shop section:nth-of-type(3) li ul {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0px;
+}
+/* vorige ul was voor algemeen gedaan, dus deze is voor de social ul en doet de rest ontdoen.  */
+
+
+
+
 
 
 
@@ -562,9 +623,31 @@ main.shop section:nth-of-type(3) li {
 
 a:hover {
     color: var(--hoverKleur);
-    text-decoration: var(--hoverKleur);
+    text-decoration: underline;
 }
 
+button:hover {
+    border: 2px solid var(--hoverKleur);
+    color: var(--hoverKleur);
+}
+
+
+
+
+
+
+
+a:focus{
+    color: var(--focusKleur);
+    border: 5px solid var(--focusKleur);
+}
+
+
+
+input:focus{
+    color: var(--focusKleur);
+    border: 5px solid var(--focusKleur);
+}
 
 
 
@@ -573,7 +656,6 @@ a:hover {
 
 
 .zoomIn:hover {
-    background: green;
     animation: zoomIn 2s ease-out;
 }
   

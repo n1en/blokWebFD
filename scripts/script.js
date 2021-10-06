@@ -52,4 +52,4 @@ knop.addEventListener("click", toggleMenu)
 // door deze eventlistenener / toggleMenu, is het wanneer je erop klikt de volgende stap wordt toegepast
 
 
-// bron voor addToCartButtons: 
+// bron voor addToCartButtons: https://codepen.io/shooft/pen/powEBrq aka Sanne
