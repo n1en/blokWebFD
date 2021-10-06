@@ -192,7 +192,7 @@ samen met je groepje opstellen
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
 - ken je code
-- punt 2
+- ik weet nu precies wat en wanneer
 - nog een punt
 - ...
 
@@ -208,11 +208,22 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+waar ik niet uit kwam:
+ waar ik erg veel moeite mee had was hte maken van een goed menu. ik merkte dat ik hier ook veel tijd in besteed had. Na een tijdje heb ik Bo gevraagd voor hulp en stuurde zij handige linkjes met uitleg door. Hierdoor was het voor mij weer duidelijk hoe en wat.
+ 
+ lastig:
+ ook kwam ik niet uit een paar kleine dingetjes, zoals foto;s 2 aan 2 krijgen wanneer ze in lu staan, dat is uiteindelijk wel gelukt (ook met Bo's hulp)
+ 
+ ging goed:
+ na een tijdje vond ik eigelijk alles vanzelf wel beter gaan. Ik snap nu zelfs hoe flexbox werkt (denk ik :) )
+ 
 
 ### Screenshot(s)
 
-hier screenshot(s) van je eindresultaat
+<img src="images/hoofdpagina1.jpg" width="375px" alt="homepagina">
+ <img src="images/hoofdpagina2.jpg" width="375px" alt="homepagina">
+ <img src="images/shop1.jpg" width="375px" alt="homepagina">
+ <img src="images/shop2.jpg" width="375px" alt="homepagina">
 
 </details>
 
