@@ -57,14 +57,16 @@ hier de naam van de pagina
 <details>
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
-### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+### hoofd pagina op laptop: 
+<img src="images/bdHOOFD.png" width="375px" alt="breakdown van de hele pagina">
+hoofd pagina break down schets 
+ vlak voor het inleveren: ik realiseer me nu dat ik de tekst vanaf subscribe allemaal footer had kunnen maken
 
-### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+### SHOP op laptop: 
+<img src="images/bdSHOP.png" width="375px" alt="breakdown van Shop">
 
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+### MENU TELEFOON: 
+<img src="images/bdMENU.png" width="375px" alt="breakdown van HET MENU">
 
 </details>
 
@@ -140,30 +142,27 @@ nvt
 <summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
-Lijst met je bevindingen die in de test naar voren kwamen:
+- gele blok zelf niet te zien, tekst wel
+ - voor kleurenblind is aalles leesbaar
+ - menu knop wel erg klein 
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Gele blok zelf niet te zien, tekst wel
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+oeps vergeten foto's te maken, maar ik deed de bril op waardoor je geel niet meer ziet, en het viel mij gelijk al op dat het gele blok weg viel. Echter is dit blok niet heel belangrijk, dus heb ik besloten het zo te laten
 
 
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Voor kleurenblind is aalles leesbaar
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Ik heb alle kleuren blindheid brillen op gehad en ben de pagina af gegaan, alles was leesbaar, dus hoefte ik hier niks bij aan te passen.
 
 
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Menu knop wel erg klein 
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+De menu knop was erg klein om te gebruik, dus heb ik deze wat grooter gemaakt 
+
+
+ 
+ ik wou nog de test doen met voice assist op mijn telefoon, maar ik kreeg mijn telefoon op een gegeven moment niet meer aan en ben er toen mee gestopt (was erg stressvol)
 
 </details>
 
@@ -177,8 +176,7 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+Ik heb denk ik aardig was process gemaakt en was eigelijk wel zo goed als klaar. Ik moest alleen nog de puntjes op de i zetten
 
 ### Agenda voor meeting
 samen met je groepje opstellen
@@ -193,7 +191,7 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
+- ken je code
 - punt 2
 - nog een punt
 - ...
@@ -227,10 +225,6 @@ hier screenshot(s) van je eindresultaat
 <details open>
 <summary>continu bijhouden terwijl je werkt</summary>
 
-Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
-
-1. bron 1
-2. bron 2
-3. ...
+mijn bronnen staan in de code
 
 </details>
